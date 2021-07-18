@@ -1,0 +1,23 @@
+name: auto build with CI with GITHUB
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build and deploy
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.PRIVATE_KEY }}
+          port: ${{ secrets.PORT }}
+          passphrase: ${{ secrets.PASSPHRASE }}
+          script: |
+            cd my-portfolio
+            git fetch
+            git pull
+            pm2 restart chunlee-portfolio
