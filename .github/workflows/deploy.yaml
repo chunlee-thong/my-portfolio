@@ -17,7 +17,7 @@ jobs:
           port: ${{ secrets.PORT }}
           passphrase: ${{ secrets.PW }}
           script: |
-            cd my-portfolio
+            cd projects/my-portfolio
             git fetch
             git pull
             pm2 restart chunlee-portfolio
