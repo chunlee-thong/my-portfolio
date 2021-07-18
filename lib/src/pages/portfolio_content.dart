@@ -40,7 +40,7 @@ class PortfolioContent extends StatelessWidget {
           SectionTitle(title: "Portfolio"),
           SpaceY(24),
           GridView.extent(
-            maxCrossAxisExtent: 768,
+            maxCrossAxisExtent: 500,
             childAspectRatio: 16 / 12,
             crossAxisSpacing: 24,
             mainAxisSpacing: 24,
