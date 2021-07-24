@@ -57,7 +57,7 @@ class SkillContent extends StatelessWidget {
           SpecialistItem(text: "Cross Platform Mobile App Development with Flutter"),
           SpecialistItem(text: "REST API with NestJS or ExpressJS with both SQL and noSQL"),
           SpecialistItem(text: "Web application with React JS"),
-          SpecialistItem(text: "Server configuration, DevOps, Docker, Github action..."),
+          SpecialistItem(text: "Server configuration, Nginx, Docker, CI/CD"),
         ],
       ),
     );

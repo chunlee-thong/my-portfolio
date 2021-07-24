@@ -25,10 +25,10 @@ class ExperienceContent extends StatelessWidget {
             company: "Optistech",
             description: [
               "Develop an Android and iOS application using Flutter framework.",
-              "Teach junior developer.",
+              "Mentor junior developer.",
               "Create reusable Package and Plugin.",
             ],
-            period: "April 2019 - Present",
+            period: "April 2019 - July 2021",
           ),
         ],
       ),
